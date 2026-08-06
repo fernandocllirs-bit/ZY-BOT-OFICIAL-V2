@@ -15,8 +15,27 @@ const BANNER_LOJA = "https://images-ext-1.discordapp.net/external/v605jaiksmzfn2
 function formatarPreco(valor) {
     return valor.toFixed(2).replace(".", ",");
 }
+async function responder(interaction, data) {
+
+    try {
+
+        if (interaction.deferred || interaction.replied) {
+
+            return interaction.editReply(data);
+
+        }
 
 
+        return interaction.update(data);
+
+
+    } catch(err) {
+
+        console.log("ERRO AO RESPONDER ESTOQUE:", err);
+
+    }
+
+}
 
 module.exports = async (interaction, jogo, tipo) => {
 
@@ -46,7 +65,7 @@ module.exports = async (interaction, jogo, tipo) => {
 
         if (!categoriasUnicas.length) {
 
-    return interaction.editReply({
+    return responder(interaction, {
 
     content: "❌ Nenhuma categoria encontrada.",
 
@@ -114,7 +133,7 @@ module.exports = async (interaction, jogo, tipo) => {
 
 
 
-        return interaction.editReply({
+        return responder(interaction, {
 
             embeds: [embed],
 
@@ -146,7 +165,7 @@ module.exports = async (interaction, jogo, tipo) => {
 
     if (!itens.length) {
 
-    return interaction.editReply({
+    return responder(interaction, {
 
     content: "❌ Nenhum item disponível nessa categoria.",
 
@@ -230,7 +249,7 @@ ${lista}
 
 
 
-    return interaction.editReply({
+    return responder(interaction, {
 
         embeds:[embed],
 

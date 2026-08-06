@@ -8,6 +8,7 @@ const {
 
 const mostrarEstoque = require("./estoque");
 const criarCarrinho = require("./compra");
+const mostrarItens = require("./itens");
 const produtos = require("../../../data/produtos.json");
 
 async function mostrarItensCarrinho(interaction, categoria, pagina = 0) {
@@ -57,7 +58,7 @@ itensPagina.forEach(item => {
 
                 new ButtonBuilder()
 
-                    .setCustomId(`item_${item.nome}`)
+                    .setCustomId(`item_${item.id}`)
 
                     .setLabel(item.nome)
 
@@ -82,8 +83,8 @@ itensPagina.forEach(item => {
             new ButtonBuilder()
 
                 .setCustomId(
-                    `pagina_anterior_${categoria}_${pagina}`
-                )
+    `pagina_anterior_${encodeURIComponent(categoria)}_${pagina}`
+)
 
                 .setLabel("⬅️ Voltar")
 
@@ -102,8 +103,8 @@ itensPagina.forEach(item => {
             new ButtonBuilder()
 
                 .setCustomId(
-                    `pagina_proxima_${categoria}_${pagina}`
-                )
+    `pagina_proxima_${encodeURIComponent(categoria)}_${pagina}`
+)
 
                 .setLabel("Próxima ➡️")
 
@@ -114,7 +115,9 @@ itensPagina.forEach(item => {
     }
 
 
+    if (paginaRow.components.length > 0) {
     componentes.push(paginaRow);
+}
 
 
 
@@ -195,11 +198,7 @@ module.exports = async (interaction) => {
 
     if (interaction.isStringSelectMenu()) {
 
-        console.log("ANTES DO DEFER");
-
-        await interaction.deferUpdate();
-
-        console.log("DEFER FEITO");
+    console.log("SELECT MENU");
 
     if (interaction.customId === "selecionar_jogo") {
 
@@ -212,183 +211,108 @@ module.exports = async (interaction) => {
 
     }
 
-  if (interaction.customId === "selecionar_categoria") {
+if (
+    interaction.customId.startsWith("selecionar_estoque_")
+) {
 
+    const jogo = interaction.customId.split("_")[2];
+
+    const tipo = interaction.values[0];
+
+
+    return mostrarEstoque(
+        interaction,
+        jogo,
+        tipo
+    );
+
+}
+
+if (interaction.customId === "selecionar_categoria") {
 
 
     const categoria = interaction.values[0];
 
 
-
-
-
     if (categoria === "categoria_mm2") {
-
-
-
 
 
         const embed = new EmbedBuilder()
 
-
-
             .setColor("#FFD1DC")
 
-
-
             .setDescription(`
+# 🎮﹒MM2
 
-
-
-# ﹒MM2 
-
-
-
-
-
-> 🌸 Escolha o tipo de item que deseja comprar.
-
-
-
-
-
-━━━━━━━━━━━━━━━━━━━━
-
-
-
-
-
-Selecione uma categoria abaixo:
-
-
-
+> 🌸 Selecione a categoria do item.
             `);
 
 
 
+        const menu = new StringSelectMenuBuilder()
 
+            .setCustomId("selecionar_tipo_mm2")
 
-        const rowTipos = new ActionRowBuilder()
+            .setPlaceholder("Selecionar categoria")
 
+            .addOptions(
 
+                {
+                    label:"Godlys",
+                    value:"Godlys"
+                },
 
-            .addComponents(
+                {
+                    label:"Guns",
+                    value:"Guns"
+                },
 
+                {
+                    label:"Chromas",
+                    value:"Chromas"
+                },
 
-
-                new ButtonBuilder()
-
-
-
-                    .setCustomId("tipo_mm2_godlys")
-
-
-
-                    .setLabel("Godlys")
-
-
-
-                    .setStyle(ButtonStyle.Secondary),
-
-
-
-
-
-                new ButtonBuilder()
-
-
-
-                    .setCustomId("tipo_mm2_sets")
-
-
-
-                    .setLabel("Sets")
-
-
-
-                    .setStyle(ButtonStyle.Secondary)
-
-
+                {
+                    label:"Sets",
+                    value:"Sets"
+                }
 
             );
 
 
-
-
-
-        const rowAcoes = new ActionRowBuilder()
-
-
+        const voltar = new ActionRowBuilder()
 
             .addComponents(
 
-
-
                 new ButtonBuilder()
-
-
 
                     .setCustomId("voltar_categoria")
 
-
-
                     .setLabel("⬅️ Voltar")
 
-
-
-                    .setStyle(ButtonStyle.Secondary),
-
-
-
-
-
-                new ButtonBuilder()
-
-
-
-                    .setCustomId("fechar_carrinho")
-
-
-
-                    .setLabel("Fechar Carrinho")
-
-
-
-                    .setStyle(ButtonStyle.Danger)
-
-
+                    .setStyle(ButtonStyle.Secondary)
 
             );
 
 
 
+        return interaction.update({
 
+    embeds:[embed],
 
-        return interaction.editReply({
+    components:[
 
+        new ActionRowBuilder()
+        .addComponents(menu),
 
+        voltar
 
-            embeds: [embed],
+    ]
 
-
-
-            components: [
-
-                rowTipos,
-
-                rowAcoes
-
-            ]
-
-
-
-        });
-
+});
 
 
     }
-
-
 
 
 
@@ -398,182 +322,84 @@ Selecione uma categoria abaixo:
 
         const embed = new EmbedBuilder()
 
+        .setColor("#FFD1DC")
 
+        .setDescription(`
 
-            .setColor("#FFD1DC")
+# 🎮﹒FTF
 
+> 🌸 Selecione a categoria do item.
 
+        `);
 
-            .setDescription(`
 
 
+        const menu = new StringSelectMenuBuilder()
 
-# ﹒FTF 
+        .setCustomId("selecionar_tipo_ftf")
 
+        .setPlaceholder("Selecionar categoria")
 
+        .addOptions({
 
+            label:"Legendary",
 
-
-> 🌸 Escolha o tipo de item que deseja comprar.
-
-
-
-
-
-━━━━━━━━━━━━━━━━━━━━
-
-
-
-
-
-Selecione uma categoria abaixo:
-
-
-
-            `);
-
-
-
-
-
-        const row = new ActionRowBuilder()
-
-
-
-            .addComponents(
-
-
-
-                new ButtonBuilder()
-
-
-
-                    .setCustomId("tipo_ftf")
-
-
-
-                    .setLabel("Itens FTF")
-
-
-
-                    .setStyle(ButtonStyle.Secondary)
-
-
-
-            );
-
-
-
-
-
-        const rowAcoes = new ActionRowBuilder()
-
-
-
-            .addComponents(
-
-
-
-                new ButtonBuilder()
-
-
-
-                    .setCustomId("voltar_categoria")
-
-
-
-                    .setLabel("⬅️ Voltar")
-
-
-
-                    .setStyle(ButtonStyle.Secondary),
-
-
-
-
-
-                new ButtonBuilder()
-
-
-
-                    .setCustomId("fechar_carrinho")
-
-
-
-                    .setLabel("Fechar Carrinho")
-
-
-
-                    .setStyle(ButtonStyle.Danger)
-
-
-
-            );
-
-
-
-
-
-        return interaction.editReply({
-
-
-
-            embeds: [embed],
-
-
-
-            components: [
-
-                row,
-
-                rowAcoes
-
-            ]
-
-
+            value:"Legendary"
 
         });
 
+        return interaction.update({
+
+    embeds:[embed],
+
+    components:[
+
+        new ActionRowBuilder()
+        .addComponents(menu)
+
+    ]
+
+});
 
 
     }
 
 
+}
+  if (
+    interaction.customId === "selecionar_tipo_mm2" ||
+    interaction.customId === "selecionar_tipo_ftf"
+) {
 
-} 
+    let tipo = interaction.values[0];
 
-    if (interaction.customId.startsWith("selecionar_estoque_")) {
 
-        const jogo = interaction.customId.split("_")[2];
-
-        const tipo = interaction.values[0];
-
-        return mostrarEstoque(
-            interaction,
-            jogo,
-            tipo
-        );
-
-    }
+    return mostrarItens(
+        interaction,
+        tipo
+    );
 
 }
     if (interaction.customId.startsWith("item_")) {
 
-    const nomeItem = interaction.customId.replace("item_", "");
+
+    const idItem = interaction.customId.replace("item_", "");
+
 
     const item = produtos.find(
-        produto => produto.nome === nomeItem
+        produto => produto.id === idItem
     );
 
 
     if (!item) {
 
         return interaction.reply({
-            content: "❌ Item não encontrado.",
-            ephemeral: true
+            content:"❌ Item não encontrado.",
+            ephemeral:true
         });
 
     }
+
 
 
     const embed = new EmbedBuilder()
@@ -585,13 +411,20 @@ Selecione uma categoria abaixo:
 # 🛒﹒${item.nome}
 
 
-🛒 **${item.nome} selecionado**
+> 🌸 Item selecionado:
 
 
-💰 Valor: R$ ${item.preco.toFixed(2).replace(".", ",")}
+**Item:** ${item.nome}
+
+**Valor:** R$ ${item.preco.toFixed(2).replace(".", ",")}
 
 
-> Escolha a quantidade desejada.
+Quantidade: **1**
+
+━━━━━━━━━━━━━━━━━━━━
+
+
+Escolha uma opção abaixo.
 
         `);
 
@@ -603,25 +436,25 @@ Selecione uma categoria abaixo:
 
             new ButtonBuilder()
 
-                .setCustomId(`quantidade_menos_${item.nome}`)
+                .setCustomId(`quantidade_menos_${item.id}`)
 
-                .setLabel("Diminuir quantidade")
-
-                .setStyle(ButtonStyle.Secondary),
-
-
-            new ButtonBuilder()
-
-                .setCustomId(`quantidade_mais_${item.nome}`)
-
-                .setLabel("Aumentar quantidade")
+                .setLabel("➖")
 
                 .setStyle(ButtonStyle.Secondary),
 
 
             new ButtonBuilder()
 
-                .setCustomId(`adicionar_${item.nome}`)
+                .setCustomId(`quantidade_mais_${item.id}`)
+
+                .setLabel("➕")
+
+                .setStyle(ButtonStyle.Secondary),
+
+
+            new ButtonBuilder()
+
+                .setCustomId(`adicionar_${item.id}`)
 
                 .setLabel("Adicionar ao carrinho")
 
@@ -630,13 +463,38 @@ Selecione uma categoria abaixo:
         );
 
 
+    const row2 = new ActionRowBuilder()
+
+        .addComponents(
+
+            new ButtonBuilder()
+
+                .setCustomId(`outro_item_${item.categoria}`)
+
+                .setLabel("Selecionar outro item")
+
+                .setStyle(ButtonStyle.Secondary)
+
+        );
+
+
+
     return interaction.update({
 
         embeds:[embed],
 
-        components:[row]
+        components:[
+
+            row,
+
+            row2
+
+        ]
 
     });
+
+
+}
 
 }
 
@@ -644,7 +502,7 @@ if (interaction.customId.startsWith("pagina_proxima_")) {
 
     const dados = interaction.customId.split("_");
 
-    const categoria = dados[2];
+    const categoria = decodeURIComponent(dados[2]);
 
     const paginaAtual = Number(dados[3]);
 
@@ -662,7 +520,7 @@ if (interaction.customId.startsWith("pagina_anterior_")) {
 
     const dados = interaction.customId.split("_");
 
-    const categoria = dados[2];
+    const categoria = decodeURIComponent(dados[2]);
 
     const paginaAtual = Number(dados[3]);
 
@@ -674,16 +532,19 @@ if (interaction.customId.startsWith("pagina_anterior_")) {
     );
 
 }
+
+
 if (interaction.customId.startsWith("voltar_estoque_")) {
 
-    await interaction.deferUpdate();
 
     const jogo = interaction.customId.split("_")[2];
+
 
     return mostrarEstoque(
         interaction,
         jogo
     );
+
 
 }
     switch (interaction.customId) {

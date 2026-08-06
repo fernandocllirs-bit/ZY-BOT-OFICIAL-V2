@@ -1,805 +1,326 @@
 [
-    {
-        "id": "heartblade",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Heartblade",
-        "preco": 6.35,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "candleflame",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Candleflame",
-        "preco": 4.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "battleaxe_ii",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "BattleAxe II",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "bioblade",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Bioblade",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "boneblade",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Boneblade",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "gemstone",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Gemstone",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "nightblade",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Nightblade",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "tides",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Tides",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "vampires_edge",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Vampires Edge",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "winter_edge",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Winter Edge",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "heat",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Heat",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "peppermint",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Peppermint",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "pixel",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Pixel",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "icewing",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Icewing",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "Set_Beachy",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Beachy set (NOVO!!)",
-        "preco": 71.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-        {
-        "id": "clockwork",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Clockwork",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "cookieblade",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Cookieblade",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "deathshard",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Deathshard",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "eternal_i",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Eternal I",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "eternal_ii",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Eternal II",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "eternal_iv",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Eternal IV",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "flames",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Flames",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "hallows_blade",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Hallows Blade",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "hallows_edge",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Hallows Edge",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "nebula",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Nebula",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "prismatic",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Prismatic",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "pumpking",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Pumpking",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "saw",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Saw",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "slasher",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Slasher",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "snowflake",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Snowflake",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "spider",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Spider",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "handsaw",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Handsaw",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "icedragon",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Icedragon",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "fang",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Fang",
-        "preco": 1.50,
-        "quantidade": 2,
-        "ativo": true
-    },
-    {
-        "id": "seer_blue",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Seer Blue",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "seer_red",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Seer Red",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "seer_purple",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Seer Purple",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "seer_green",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Seer Green",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "seer_yellow",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Seer Yellow",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "seer_orange",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Seer Orange",
-        "preco": 1.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "chill",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Chill",
-        "preco": 1.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "frostbite",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Frostbite",
-        "preco": 1.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "frostsaber",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Frostsaber",
-        "preco": 1.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "ice_shard",
-        "categoria": "MM2",
-        "tipo": "Godlys",
-        "nome": "Ice Shard",
-        "preco": 1.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-        {
-        "id": "darkbringer",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Darkbringer",
-        "preco": 4.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "lightbringer",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Lightbringer",
-        "preco": 4.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "luger",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Luger",
-        "preco": 4.25,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "elderwood_revolver",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Elderwood Revolver",
-        "preco": 3.90,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "red_luger",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Red Luger",
-        "preco": 3.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "green_luger",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Green Luger",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "shark",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Shark",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "spectre",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Spectre",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "laser",
-        "categoria": "MM2",
-        "tipo": "Guns",
-        "nome": "Laser",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-
-    {
-        "id": "darkbringer_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Darkbringer C",
-        "preco": 5.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "lightbringer_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Lightbringer C",
-        "preco": 5.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "candleflame_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Candleflame C",
-        "preco": 4.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "luger_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Luger C",
-        "preco": 4.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "elderwoodblade_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Elderwoodblade C",
-        "preco": 4.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "swirlygun_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "SwirlyGun C",
-        "preco": 3.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "gemstone_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Gemstone C",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "laser_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Laser C",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "shark_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Shark C",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "boneblade_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Boneblade C",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "deathshard_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Deathshard C",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "saw_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Saw C",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "seer_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Seer C",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "slasher_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Slasher C",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "heat_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Heat Chroma",
-        "preco": 2.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "fang_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Fang C",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "gingerblade_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Gingerblade C",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "tides_chroma",
-        "categoria": "MM2",
-        "tipo": "Chromas",
-        "nome": "Tides C",
-        "preco": 2.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-        {
-        "id": "bat_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Bat Set",
-        "preco": 12.75,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "candy_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Candy Set",
-        "preco": 12.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "icebreaker_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Icebreaker Set",
-        "preco": 11.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "elderwood_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Set Elderwood",
-        "preco": 8.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "eternalcane_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Set Eternalcane",
-        "preco": 3.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "virtual_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Set Virtual",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "ginger_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Set Ginger",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "xmas_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Set Xmas",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "plasma_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Set Plasma",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "american_set",
-        "categoria": "MM2",
-        "tipo": "Sets",
-        "nome": "Set American",
-        "preco": 3.00,
-        "quantidade": 1,
-        "ativo": true
-    },
-
-    {
-        "id": "party_balloons",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Party Balloons",
-        "preco": 9.35,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "devilish_candle",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Devilish Candle",
-        "preco": 6.05,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "pumpkin_slice",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Pumpkin Slice",
-        "preco": 5.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "sakura_parasol",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Sakura Parasol",
-        "preco": 4.50,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "classic",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Classic",
-        "preco": 2.75,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "strawberry_basket",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Strawberry Basket",
-        "preco": 2.15,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "sweet_train",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Sweet Train",
-        "preco": 0.25,
-        "quantidade": 1,
-        "ativo": true
-    },
-    {
-        "id": "veridian_greenhouse",
-        "categoria": "FTF",
-        "tipo": "Itens",
-        "nome": "Veridian Greenhouse",
-        "preco": 0.25,
-        "quantidade": 1,
-        "ativo": true
-    }
+  {
+    "id": "bat",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Bat",
+    "preco": 11.25,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "snowdagger",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Snowdagger",
+    "preco": 23.75,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "heartblade",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Heartblade",
+    "preco": 7.75,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "candleflame",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Candleflame",
+    "preco": 4.50,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "nightblade",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Nightblade",
+    "preco": 2.80,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "pixel",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Pixel",
+    "preco": 2.75,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "gemstone",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Gemstone",
+    "preco": 2.55,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "nebula",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "Nebula",
+    "preco": 2.55,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "battleaxe2",
+    "categoria": "MM2",
+    "tipo": "Godlys",
+    "nome": "BattleAxe II",
+    "preco": 2.50,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "luger",
+    "categoria": "MM2",
+    "tipo": "Guns",
+    "nome": "Luger",
+    "preco": 4.25,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "elderwoodrevolver",
+    "categoria": "MM2",
+    "tipo": "Guns",
+    "nome": "Elderwood Revolver",
+    "preco": 4.10,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "darkbringer",
+    "categoria": "MM2",
+    "tipo": "Guns",
+    "nome": "Darkbringer",
+    "preco": 3.80,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "lightbringer",
+    "categoria": "MM2",
+    "tipo": "Guns",
+    "nome": "Lightbringer",
+    "preco": 3.80,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "tides_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Tides",
+    "preco": 3.75,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "deathshard_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Deathshard",
+    "preco": 4.00,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "shark_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Shark",
+    "preco": 4.00,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "heat_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Heat",
+    "preco": 4.10,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "gemstone_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Gemstone",
+    "preco": 4.10,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "swirlygun_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Swirly Gun",
+    "preco": 5.05,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "elderwoodblade_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Elderwood Blade",
+    "preco": 5.55,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "candleflame_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Candleflame",
+    "preco": 5.55,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "darkbringer_chroma",
+    "categoria": "MM2",
+    "tipo": "Chromas",
+    "nome": "Chroma Darkbringer",
+    "preco": 6.10,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "icebreaker_set",
+    "categoria": "MM2",
+    "tipo": "Sets",
+    "nome": "Icebreaker Set",
+    "preco": 11.50,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "xmas_set",
+    "categoria": "MM2",
+    "tipo": "Sets",
+    "nome": "Xmas Set",
+    "preco": 3.60,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "logchopper_set",
+    "categoria": "MM2",
+    "tipo": "Sets",
+    "nome": "Logchopper Set",
+    "preco": 3.65,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "cookiecane_set",
+    "categoria": "MM2",
+    "tipo": "Sets",
+    "nome": "Cookiecane Set",
+    "preco": 3.65,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "iceflake_set",
+    "categoria": "MM2",
+    "tipo": "Sets",
+    "nome": "Iceflake Set",
+    "preco": 3.55,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "virtual_set",
+    "categoria": "MM2",
+    "tipo": "Sets",
+    "nome": "Virtual Set",
+    "preco": 3.50,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "gothicbouquet",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Gothic Bouquet",
+    "preco": 7.35,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "pumpkinslice",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Pumpkin Slice",
+    "preco": 6.25,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "cherryblossom",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Cherry Blossom",
+    "preco": 5.50,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "pearlpiercer",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Pearl Piercer",
+    "preco": 5.15,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "classic",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Classic",
+    "preco": 4.75,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "strawberryjellybasket",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Strawberry Jelly Basket",
+    "preco": 1.75,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "lovesickbow",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Lovesick Bow",
+    "preco": 8.05,
+    "quantidade": 1,
+    "ativo": true
+  },
+  {
+    "id": "veridiancactus",
+    "categoria": "FTF",
+    "tipo": "Legendary",
+    "nome": "Veridian Cactus",
+    "preco": 0.25,
+    "quantidade": 1,
+    "ativo": true
+  }
 ]

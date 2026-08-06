@@ -1,6 +1,7 @@
 const {
     EmbedBuilder,
     ActionRowBuilder,
+    StringSelectMenuBuilder,
     ButtonBuilder,
     ButtonStyle
 } = require("discord.js");
@@ -16,9 +17,9 @@ function mostrarCategorias(interaction, jogo) {
 
         categorias = [
             "Godlys",
-            "Sets",
-            "Ancients",
-            "Vintages"
+            "Guns",
+            "Chromas",
+            "Sets"
         ];
 
     }
@@ -27,34 +28,53 @@ function mostrarCategorias(interaction, jogo) {
     if (jogo === "FTF") {
 
         categorias = [
-            "Armas",
-            "Skins",
-            "Outros"
+            "Legendarys"
         ];
 
     }
 
 
-    const buttons = new ActionRowBuilder();
+
+    const menu = new StringSelectMenuBuilder()
+
+        .setCustomId(`selecionar_categoria_${jogo}`)
+
+        .setPlaceholder("▼ Selecionar categoria")
+
+        .addOptions(
+
+            categorias.map(tipo => ({
+
+                label: tipo,
+
+                value: `categoria_${jogo}_${tipo}`
+
+            }))
+
+        );
 
 
-    categorias.forEach(tipo => {
 
-        buttons.addComponents(
+    const rowMenu = new ActionRowBuilder()
+
+        .addComponents(menu);
+
+
+
+    const voltar = new ActionRowBuilder()
+
+        .addComponents(
 
             new ButtonBuilder()
 
-                .setCustomId(
-                    `categoria_${jogo}_${tipo}`
-                )
+                .setCustomId("voltar_jogos")
 
-                .setLabel(tipo)
+                .setLabel("⬅️ Voltar")
 
                 .setStyle(ButtonStyle.Secondary)
 
         );
 
-    });
 
 
     const embed = new EmbedBuilder()
@@ -63,21 +83,29 @@ function mostrarCategorias(interaction, jogo) {
 
         .setDescription(`
 
-# ﹒${jogo}
+# 🎮﹒${jogo}
 
 
-> 🌸 Selecione o tipo de item que deseja comprar.
+> 🌸 Selecione a categoria do item que deseja comprar.
 
         `);
 
 
+
     return interaction.editReply({
 
-        embeds: [embed],
+        embeds:[embed],
 
-        components: [buttons]
+        components:[
+
+            rowMenu,
+
+            voltar
+
+        ]
 
     });
+
 
 }
 
