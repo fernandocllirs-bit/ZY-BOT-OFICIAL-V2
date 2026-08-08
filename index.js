@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const fs = require("fs");
+const iniciarHeartbeat = require("./utils/heartbeat");
 
 const {
     Client,
@@ -106,9 +107,8 @@ client.on("messageCreate", async message => {
 
 
 client.once("ready", () => {
-
     console.log(`💗 ${client.user.tag} está online!`);
-
+    iniciarHeartbeat();
 });
 
 
